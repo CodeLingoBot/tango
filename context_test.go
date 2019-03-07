@@ -260,7 +260,7 @@ func TestContext9(t *testing.T) {
 	expect(t, buff.String(), "this is index.html")
 }
 
-// check unsupported function will panic
+// TestContext10 checks unsupported function will panic
 func TestContext10(t *testing.T) {
 	buff := bytes.NewBufferString("")
 	recorder := httptest.NewRecorder()

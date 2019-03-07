@@ -342,12 +342,12 @@ func (ctx *Context) QueryFloat32(key string, defaults ...float32) float32 {
 	return (*Queries)(ctx.req).MustFloat32(key, defaults...)
 }
 
-// FormFloat64 returns request form as float64 with default
+// QueryFloat64 returns request form as float64 with default
 func (ctx *Context) QueryFloat64(key string, defaults ...float64) float64 {
 	return (*Queries)(ctx.req).MustFloat64(key, defaults...)
 }
 
-// FormBool returns request form as bool with default
+// QueryBool returns request form as bool with default
 func (ctx *Context) QueryBool(key string, defaults ...bool) bool {
 	return (*Queries)(ctx.req).MustBool(key, defaults...)
 }

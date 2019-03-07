@@ -137,7 +137,7 @@ func (e edges) Len() int { return len(e) }
 
 func (e edges) Swap(i, j int) { e[i], e[j] = e[j], e[i] }
 
-// static route will be put the first, so it will be match first.
+// Less: static route will be put the first, so it will be match first.
 // two static route, content longer is first.
 func (e edges) Less(i, j int) bool {
 	if e[i].tp == snode {
